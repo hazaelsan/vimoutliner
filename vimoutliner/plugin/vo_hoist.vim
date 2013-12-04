@@ -284,10 +284,10 @@ endfunction
 "}}}2
 "}}}1
 " Autocommands {{{1
-	au BufReadPost vo_hoist.*.otl cmap <buffer> wq call DeHoist()
-	au BufReadPost vo_hoist.*.otl cmap <buffer> qa call DeHoist()
-	au BufReadPost vo_hoist.*.otl cmap <buffer> q call DeHoist()
-	au BufReadPost vo_hoist.*.otl cmap <buffer> x call DeHoist()
+	au BufReadPost vo_hoist.*.otl cabbrev <buffer> wq call DeHoist()
+	au BufReadPost vo_hoist.*.otl cabbrev <buffer> qa call DeHoist()
+	au BufReadPost vo_hoist.*.otl cabbrev <buffer> q call DeHoist()
+	au BufReadPost vo_hoist.*.otl cabbrev <buffer> x call DeHoist()
 	au BufReadPost vo_hoist.*.otl nmap <buffer> ZZ :call DeHoist()<cr>
 "}}}1
 " vim600: set foldlevel=0 foldmethod=marker:
